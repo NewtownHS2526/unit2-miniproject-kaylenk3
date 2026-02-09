@@ -1,4 +1,26 @@
 // YOUR CODE HERE
+const blueButton = document.querySelector("#blue");
+const greenButton = document.querySelector("#green");
+const pinkButton = document.querySelector("#pink");
+const blackButton = document.querySelector("#black");
+const favColorDisplay = document.getElementById("favColorDisplay");
+
+favColorDisplay =() => {
+  if (blueButton.clicked) {
+    alert("You picked blue 💙");
+  } else if (greenButton.clicked) {
+    alert ("You picked green 💚"); 
+  } else if (pinkButton.clicked) {
+    alert("You picked pink 💕");
+  } else if (blackButton.clicked){
+        alert("You picked black 🖤")
+  }
+};
+blueButton.addEventListener('change', favColorDisplay);
+greenButton.addEventListener('change', favColorDisplay);
+pinkButton.addEventListener('change', favColorDisplay);
+blackButton.addEventListener('change', favColorDisplay);
+
 
 // getRandomInt() - gets a random number between 1 and 100
 const getRandomInt = () => (
